@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HBF Current Visitors</title>
+
+  <style>
+    :root {
+      --navy: #002855;
+      --background: #f3f5f7;
+      --card: #ffffff;
+      --border: #d9dee5;
+      --text: #17212b;
+      --muted: #66727f;
+      --green: #2e7d32;
+      --green-bg: #e8f5e9;
+      --info-bg: #eef4fa;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      background: var(--background);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 24px 18px;
+    }
+
+    .header-inner {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .project-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      opacity: 0.8;
+      margin-bottom: 5px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 27px;
+      line-height: 1.2;
+    }
+
+    .header-date {
+      margin-top: 8px;
+      font-size: 15px;
+      opacity: 0.9;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 22px 16px 40px;
+    }
+
+    /* -----------------------------
+       Visitor count
+    ----------------------------- */
+
+    .summary {
+      margin-bottom: 22px;
+    }
+
+    .summary-card {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .summary-number {
+      display: block;
+      font-size: 34px;
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1;
+      margin-bottom: 7px;
+    }
+
+    .summary-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--muted);
+    }
+
+    /* -----------------------------
+       Visitor table
+    ----------------------------- */
+
+    .visitor-section {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    }
+
+    .section-header {
+      padding: 15px 18px;
+      border-bottom: 2px solid var(--navy);
+    }
+
+    .section-title {
+      margin: 0;
+      color: var(--navy);
+      font-size: 19px;
+      font-weight: 750;
+    }
+
+    .visitor-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .visitor-table th {
+      background: #f7f8fa;
+      color: var(--muted);
+      text-align: left;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .visitor-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    .visitor-table tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    .visitor-name {
+      font-weight: 700;
+    }
+
+    .badge {
+      display: inline-block;
+      min-width: 38px;
+      text-align: center;
+      background: var(--green-bg);
+      color: var(--green);
+      border-radius: 6px;
+      padding: 5px 8px;
+      font-weight: 800;
+    }
+
+    /* -----------------------------
+       Contact notice
+    ----------------------------- */
+
+    .notice {
+      margin-top: 18px;
+      background: var(--info-bg);
+      border: 1px solid #cbdbea;
+      border-radius: 10px;
+      padding: 16px 18px;
+    }
+
+    .notice-title {
+      color: var(--navy);
+      font-weight: 750;
+      font-size: 14px;
+      margin-bottom: 4px;
+    }
+
+    .notice-text {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.5;
+    }
+
+    /* -----------------------------
+       Empty / loading / error
+    ----------------------------- */
+
+    .message {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 38px 20px;
+      text-align: center;
+    }
+
+    .message-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 7px;
+    }
+
+    .message-text {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .error {
+      border-left: 5px solid #c62828;
+    }
+
+    footer {
+      margin-top: 25px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.6;
+    }
+
+    /* -----------------------------
+       Mobile
+    ----------------------------- */
+
+    @media (max-width: 650px) {
+
+      header {
+        padding: 19px 16px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      main {
+        padding: 16px 12px 30px;
+      }
+
+      .summary-card {
+        padding: 17px;
+      }
+
+      .summary-number {
+        font-size: 30px;
+      }
+
+      .visitor-table thead {
+        display: none;
+      }
+
+      .visitor-table,
+      .visitor-table tbody,
+      .visitor-table tr,
+      .visitor-table td {
+        display: block;
+        width: 100%;
+      }
+
+      .visitor-table tr {
+        padding: 13px 14px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      .visitor-table tbody tr:last-child {
+        border-bottom: none;
+      }
+
+      .visitor-table td {
+        border: none;
+        padding: 3px 0;
+      }
+
+      .visitor-table td::before {
+        content: attr(data-label);
+        display: inline-block;
+        min-width: 90px;
+        margin-right: 7px;
+        color: var(--muted);
+        font-size: 11px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .visitor-name {
+        font-size: 16px;
+        margin-bottom: 5px;
+      }
+
+      .visitor-name::before {
+        display: none !important;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+
+    <div class="project-label">
+      Huntington Bank Field
+    </div>
+
+    <h1>
+      Current Visitors
+    </h1>
+
+    <div
+      class="header-date"
+      id="displayDate">
+    </div>
+
+  </div>
+</header>
+
+
+<main>
+
+  <section
+    class="summary"
+    id="summary"
+    style="display:none;">
+
+    <div class="summary-card">
+
+      <span
+        class="summary-number"
+        id="visitorCount">
+        0
+      </span>
+
+      <span class="summary-label">
+        Visitors Currently Onsite
+      </span>
+
+    </div>
+
+  </section>
+
+
+  <div id="visitorContainer">
+
+    <div class="message">
+
+      <div class="message-title">
+        Loading current visitors...
+      </div>
+
+      <div class="message-text">
+        Retrieving current visitor status.
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <div class="notice">
+
+    <div class="notice-title">
+      Visitor Contact Information
+    </div>
+
+    <div class="notice-text">
+      Visitor and host contact information is not displayed
+      on this page. Please reference the HBF Visitor Log for
+      visitor and host contact details.
+    </div>
+
+  </div>
+
+
+  <footer>
+
+    <div>
+      This page displays visitors currently marked as Checked In.
+    </div>
+
+    <div>
+      Data updates approximately every 5 minutes.
+    </div>
+
+    <div>
+      Last updated:
+      <span id="lastUpdated">—</span>
+    </div>
+
+  </footer>
+
+</main>
+
+
+<script>
+
+  const DATA_FILE = "./visitors-onsite.json";
+
+  /*
+   * Browser checks once per minute.
+   * Power Automate refreshes the source data every 5 minutes.
+   */
+  const REFRESH_INTERVAL = 60000;
+
+
+  function escapeHtml(value) {
+
+    if (value === null || value === undefined) {
+      return "";
+    }
+
+    return String(value)
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll('"', "&quot;")
+      .replaceAll("'", "&#039;");
+  }
+
+
+  function displayCurrentDate() {
+
+    const now = new Date();
+
+    document.getElementById(
+      "displayDate"
+    ).textContent =
+      now.toLocaleDateString(
+        undefined,
+        {
+          weekday: "long",
+          year: "numeric",
+          month: "long",
+          day: "numeric"
+        }
+      );
+  }
+
+
+  /*
+   * SharePoint sends TimeIn as UTC.
+   * Display it in the viewer's local timezone.
+   */
+
+  function formatTime(value) {
+
+    if (!value) {
+      return "—";
+    }
+
+    const date = new Date(value);
+
+    if (Number.isNaN(date.getTime())) {
+      return "—";
+    }
+
+    return date.toLocaleTimeString(
+      [],
+      {
+        hour: "numeric",
+        minute: "2-digit"
+      }
+    );
+  }
+
+
+  function formatUpdated(value) {
+
+    if (!value) {
+      return "—";
+    }
+
+    const date = new Date(value);
+
+    if (Number.isNaN(date.getTime())) {
+      return "—";
+    }
+
+    return date.toLocaleTimeString(
+      [],
+      {
+        hour: "numeric",
+        minute: "2-digit"
+      }
+    );
+  }
+
+
+  function renderVisitors(data) {
+
+    const container =
+      document.getElementById(
+        "visitorContainer"
+      );
+
+    const summary =
+      document.getElementById(
+        "summary"
+      );
+
+    const visitors =
+      Array.isArray(data.Visitors)
+        ? data.Visitors
+        : [];
+
+
+    document.getElementById(
+      "visitorCount"
+    ).textContent =
+      visitors.length;
+
+
+    document.getElementById(
+      "lastUpdated"
+    ).textContent =
+      formatUpdated(data.LastUpdated);
+
+
+    summary.style.display = "block";
+
+
+    /*
+     * Nobody currently checked in.
+     */
+
+    if (visitors.length === 0) {
+
+      container.innerHTML = `
+        <div class="message">
+
+          <div class="message-title">
+            No visitors currently checked in
+          </div>
+
+          <div class="message-text">
+            Visitors will appear here after they check in.
+          </div>
+
+        </div>
+      `;
+
+      return;
+    }
+
+
+    /*
+     * Sort visitors alphabetically by last/full name.
+     */
+
+    visitors.sort(
+      (a, b) =>
+        String(a.VisitorName || "")
+          .localeCompare(
+            String(b.VisitorName || "")
+          )
+    );
+
+
+    let rows = "";
+
+
+    visitors.forEach(visitor => {
+
+      const visitorName =
+        escapeHtml(
+          visitor.VisitorName ||
+          "Visitor"
+        );
+
+      const company =
+        escapeHtml(
+          visitor.Company ||
+          "Not provided"
+        );
+
+      const badge =
+        escapeHtml(
+          visitor.BadgeNumber ||
+          "—"
+        );
+
+      const timeIn =
+        escapeHtml(
+          formatTime(visitor.TimeIn)
+        );
+
+
+      rows += `
+        <tr>
+
+          <td
+            class="visitor-name"
+            data-label="Visitor">
+            ${visitorName}
+          </td>
+
+          <td data-label="Company">
+            ${company}
+          </td>
+
+          <td data-label="Badge">
+            <span class="badge">
+              ${badge}
+            </span>
+          </td>
+
+          <td data-label="Time In">
+            ${timeIn}
+          </td>
+
+        </tr>
+      `;
+
+    });
+
+
+    container.innerHTML = `
+      <section class="visitor-section">
+
+        <div class="section-header">
+
+          <h2 class="section-title">
+            Visitors Onsite
+          </h2>
+
+        </div>
+
+        <table class="visitor-table">
+
+          <thead>
+            <tr>
+              <th>Visitor</th>
+              <th>Company</th>
+              <th>Badge</th>
+              <th>Time In</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            ${rows}
+          </tbody>
+
+        </table>
+
+      </section>
+    `;
+  }
+
+
+  async function loadVisitors() {
+
+    try {
+
+      /*
+       * Cache-busting prevents an older JSON file from
+       * being intentionally reused by the browser.
+       */
+
+      const response =
+        await fetch(
+          `${DATA_FILE}?v=${Date.now()}`,
+          {
+            cache: "no-store"
+          }
+        );
+
+
+      if (!response.ok) {
+
+        throw new Error(
+          `HTTP ${response.status}`
+        );
+
+      }
+
+
+      const data =
+        await response.json();
+
+
+      if (
+        !data ||
+        typeof data !== "object" ||
+        Array.isArray(data)
+      ) {
+
+        throw new Error(
+          "Visitor data is invalid."
+        );
+
+      }
+
+
+      renderVisitors(data);
+
+
+    } catch (error) {
+
+      console.error(
+        "Unable to load visitor status:",
+        error
+      );
+
+
+      document.getElementById(
+        "summary"
+      ).style.display = "none";
+
+
+      document.getElementById(
+        "visitorContainer"
+      ).innerHTML = `
+        <div class="message error">
+
+          <div class="message-title">
+            Unable to load visitor status
+          </div>
+
+          <div class="message-text">
+            Please refresh the page or try again shortly.
+          </div>
+
+        </div>
+      `;
+
+    }
+
+  }
+
+
+  displayCurrentDate();
+
+  loadVisitors();
+
+  setInterval(
+    loadVisitors,
+    REFRESH_INTERVAL
+  );
+
+</script>
+
+</body>
+</html>
