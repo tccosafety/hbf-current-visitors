@@ -38,6 +38,10 @@
       color: var(--text);
     }
 
+    /* -----------------------------
+       Header
+    ----------------------------- */
+
     header {
       background: var(--navy);
       color: white;
@@ -69,6 +73,10 @@
       font-size: 15px;
       opacity: 0.9;
     }
+
+    /* -----------------------------
+       Main content
+    ----------------------------- */
 
     main {
       max-width: 1000px;
@@ -176,7 +184,7 @@
     }
 
     /* -----------------------------
-       Contact notice
+       Information notice
     ----------------------------- */
 
     .notice {
@@ -201,7 +209,7 @@
     }
 
     /* -----------------------------
-       Empty / loading / error
+       Loading / empty / error
     ----------------------------- */
 
     .message {
@@ -227,12 +235,21 @@
       border-left: 5px solid #c62828;
     }
 
+    /* -----------------------------
+       Footer
+    ----------------------------- */
+
     footer {
       margin-top: 25px;
       text-align: center;
       color: var(--muted);
       font-size: 12px;
-      line-height: 1.6;
+      line-height: 1.7;
+    }
+
+    .update-time {
+      font-weight: 600;
+      color: var(--text);
     }
 
     /* -----------------------------
@@ -311,9 +328,11 @@
   </style>
 </head>
 
+
 <body>
 
 <header>
+
   <div class="header-inner">
 
     <div class="project-label">
@@ -330,10 +349,13 @@
     </div>
 
   </div>
+
 </header>
 
 
 <main>
+
+  <!-- Current visitor count -->
 
   <section
     class="summary"
@@ -357,6 +379,8 @@
   </section>
 
 
+  <!-- Visitor list -->
+
   <div id="visitorContainer">
 
     <div class="message">
@@ -373,6 +397,8 @@
 
   </div>
 
+
+  <!-- Contact information notice -->
 
   <div class="notice">
 
@@ -392,16 +418,27 @@
   <footer>
 
     <div>
-      This page displays visitors currently marked as Checked In.
+      This page displays visitors currently marked as
+      <strong>Checked In</strong> in the HBF Visitor Log.
     </div>
 
     <div>
-      Data updates approximately every 5 minutes.
+      Visitor status is updated automatically when the
+      HBF Visitor Log changes.
     </div>
 
     <div>
-      Last updated:
-      <span id="lastUpdated">—</span>
+      This page checks for newly published visitor data
+      every 15 seconds.
+    </div>
+
+    <div>
+      Visitor data last updated:
+      <span
+        class="update-time"
+        id="lastUpdated">
+        —
+      </span>
     </div>
 
   </footer>
@@ -411,14 +448,30 @@
 
 <script>
 
+  /*
+   * --------------------------------------------------------
+   * SETTINGS
+   * --------------------------------------------------------
+   */
+
   const DATA_FILE = "./visitors-onsite.json";
 
   /*
-   * Browser checks once per minute.
-   * Power Automate refreshes the source data every 5 minutes.
+   * Check the published visitor data every 15 seconds.
+   *
+   * This does NOT cause Power Automate or GitHub Actions
+   * to run. It only checks whether a newer published JSON
+   * file is available.
    */
-  const REFRESH_INTERVAL = 60000;
 
+  const REFRESH_INTERVAL = 15000;
+
+
+  /*
+   * --------------------------------------------------------
+   * HTML SAFETY
+   * --------------------------------------------------------
+   */
 
   function escapeHtml(value) {
 
@@ -434,6 +487,12 @@
       .replaceAll("'", "&#039;");
   }
 
+
+  /*
+   * --------------------------------------------------------
+   * DISPLAY CURRENT DATE
+   * --------------------------------------------------------
+   */
 
   function displayCurrentDate() {
 
@@ -455,8 +514,13 @@
 
 
   /*
-   * SharePoint sends TimeIn as UTC.
-   * Display it in the viewer's local timezone.
+   * --------------------------------------------------------
+   * FORMAT VISITOR CHECK-IN TIME
+   * --------------------------------------------------------
+   *
+   * SharePoint provides TimeIn as UTC.
+   * JavaScript automatically converts it to the viewer's
+   * local timezone.
    */
 
   function formatTime(value) {
@@ -481,6 +545,12 @@
   }
 
 
+  /*
+   * --------------------------------------------------------
+   * FORMAT LAST DATA UPDATE
+   * --------------------------------------------------------
+   */
+
   function formatUpdated(value) {
 
     if (!value) {
@@ -493,15 +563,24 @@
       return "—";
     }
 
-    return date.toLocaleTimeString(
+    return date.toLocaleString(
       [],
       {
+        month: "short",
+        day: "numeric",
         hour: "numeric",
-        minute: "2-digit"
+        minute: "2-digit",
+        second: "2-digit"
       }
     );
   }
 
+
+  /*
+   * --------------------------------------------------------
+   * RENDER VISITORS
+   * --------------------------------------------------------
+   */
 
   function renderVisitors(data) {
 
@@ -521,23 +600,37 @@
         : [];
 
 
+    /*
+     * Visitor count
+     */
+
     document.getElementById(
       "visitorCount"
     ).textContent =
       visitors.length;
 
 
+    /*
+     * Show the actual timestamp produced by Power Automate.
+     *
+     * This is intentionally NOT the browser's refresh time.
+     * It tells the viewer when the visitor dataset itself
+     * was last rebuilt.
+     */
+
     document.getElementById(
       "lastUpdated"
     ).textContent =
-      formatUpdated(data.LastUpdated);
+      formatUpdated(
+        data.LastUpdated
+      );
 
 
     summary.style.display = "block";
 
 
     /*
-     * Nobody currently checked in.
+     * Nobody currently checked in
      */
 
     if (visitors.length === 0) {
@@ -561,7 +654,7 @@
 
 
     /*
-     * Sort visitors alphabetically by last/full name.
+     * Sort visitors alphabetically
      */
 
     visitors.sort(
@@ -575,6 +668,10 @@
 
     let rows = "";
 
+
+    /*
+     * Build visitor rows
+     */
 
     visitors.forEach(visitor => {
 
@@ -598,7 +695,9 @@
 
       const timeIn =
         escapeHtml(
-          formatTime(visitor.TimeIn)
+          formatTime(
+            visitor.TimeIn
+          )
         );
 
 
@@ -631,6 +730,10 @@
     });
 
 
+    /*
+     * Render visitor table
+     */
+
     container.innerHTML = `
       <section class="visitor-section">
 
@@ -642,16 +745,20 @@
 
         </div>
 
+
         <table class="visitor-table">
 
           <thead>
+
             <tr>
               <th>Visitor</th>
               <th>Company</th>
               <th>Badge</th>
               <th>Time In</th>
             </tr>
+
           </thead>
+
 
           <tbody>
             ${rows}
@@ -664,13 +771,21 @@
   }
 
 
+  /*
+   * --------------------------------------------------------
+   * LOAD VISITOR DATA
+   * --------------------------------------------------------
+   */
+
   async function loadVisitors() {
 
     try {
 
       /*
-       * Cache-busting prevents an older JSON file from
-       * being intentionally reused by the browser.
+       * Date.now() creates a unique URL each time.
+       *
+       * This helps prevent browsers and intermediary caches
+       * from intentionally reusing an older JSON response.
        */
 
       const response =
@@ -694,6 +809,10 @@
       const data =
         await response.json();
 
+
+      /*
+       * Basic validation
+       */
 
       if (
         !data ||
@@ -745,9 +864,25 @@
   }
 
 
+  /*
+   * --------------------------------------------------------
+   * START
+   * --------------------------------------------------------
+   */
+
   displayCurrentDate();
 
+  /*
+   * Load immediately when the page opens.
+   */
+
   loadVisitors();
+
+
+  /*
+   * Then check for newly published visitor data
+   * every 15 seconds.
+   */
 
   setInterval(
     loadVisitors,
