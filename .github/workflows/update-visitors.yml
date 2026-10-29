@@ -1,0 +1,58 @@
+name: Update Current Visitors
+
+on:
+  repository_dispatch:
+    types: [update-visitors]
+
+permissions:
+  contents: write
+
+jobs:
+  update-visitors:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Write current visitor data
+        env:
+          VISITOR_DATA: ${{ toJson(github.event.client_payload) }}
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          data = json.loads(os.environ["VISITOR_DATA"])
+
+          path = Path("visitors-onsite.json")
+
+          path.write_text(
+              json.dumps(
+                  data,
+                  indent=2,
+                  ensure_ascii=False
+              ) + "\n",
+              encoding="utf-8"
+          )
+
+          print(
+              f"Visitors currently onsite: "
+              f"{data.get('VisitorCount', 0)}"
+          )
+          PY
+
+      - name: Commit current visitor data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add visitors-onsite.json
+
+          if git diff --cached --quiet; then
+            echo "No visitor data changes to commit."
+          else
+            git commit -m "Update current visitor status"
+            git push
+          fi
