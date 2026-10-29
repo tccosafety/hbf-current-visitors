@@ -1,0 +1,46 @@
+name: Deploy Visitor Dashboard
+
+on:
+  workflow_run:
+    workflows: ["Update Current Visitors"]
+    types:
+      - completed
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: visitor-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out latest repository
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload dashboard
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy dashboard
+        id: deployment
+        uses: actions/deploy-pages@v4
