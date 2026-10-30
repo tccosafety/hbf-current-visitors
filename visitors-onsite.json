@@ -1,5 +1,12 @@
 {
-  "LastUpdated": "2026-10-30T17:20:02.0171110Z",
-  "VisitorCount": 0,
-  "Visitors": []
+  "LastUpdated": "2026-10-30T17:22:04.6965453Z",
+  "VisitorCount": 1,
+  "Visitors": [
+    {
+      "BadgeNumber": "12",
+      "Company": "Turner Construction",
+      "TimeIn": "2026-10-30T17:21:20Z",
+      "VisitorName": "Nathan Weldon"
+    }
+  ]
 }
