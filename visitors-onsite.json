@@ -1,5 +1,36 @@
 {
-  "LastUpdated": "2026-10-30T20:00:00.7869046Z",
-  "VisitorCount": 0,
-  "Visitors": []
+  "LastUpdated": "2026-10-30T20:01:58.6040189Z",
+  "VisitorCount": 5,
+  "Visitors": [
+    {
+      "BadgeNumber": "1",
+      "Company": "test1",
+      "TimeIn": "2026-10-30T20:01:13Z",
+      "VisitorName": "test1 test1"
+    },
+    {
+      "BadgeNumber": "2",
+      "Company": "test2",
+      "TimeIn": "2026-10-30T20:01:14Z",
+      "VisitorName": "test2 test2"
+    },
+    {
+      "BadgeNumber": "3",
+      "Company": "test3",
+      "TimeIn": "2026-10-30T20:01:16Z",
+      "VisitorName": "test3 test3"
+    },
+    {
+      "BadgeNumber": "4",
+      "Company": "test4",
+      "TimeIn": "2026-10-30T20:01:19Z",
+      "VisitorName": "test4 test4"
+    },
+    {
+      "BadgeNumber": "5",
+      "Company": "test5",
+      "TimeIn": "2026-10-30T20:01:22Z",
+      "VisitorName": "test5 test5"
+    }
+  ]
 }
