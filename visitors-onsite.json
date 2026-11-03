@@ -1,24 +1,12 @@
 {
-  "LastUpdated": "2026-11-03T20:20:00.7875103Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-03T20:24:28.9923542Z",
+  "VisitorCount": 1,
   "Visitors": [
     {
       "BadgeNumber": "3",
       "Company": "Hammer and steel",
       "TimeIn": "2026-11-03T12:39:06Z",
       "VisitorName": "Orlando Chatman"
-    },
-    {
-      "BadgeNumber": "0010",
-      "Company": "IX",
-      "TimeIn": "2026-11-03T18:59:32Z",
-      "VisitorName": "Matt Tomasko"
-    },
-    {
-      "BadgeNumber": "0006",
-      "Company": "Independence excavating",
-      "TimeIn": "2026-11-03T18:59:46Z",
-      "VisitorName": "Kris Knier"
     }
   ]
 }
