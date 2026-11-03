@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-03T14:00:01.6202510Z",
-  "VisitorCount": 5,
+  "LastUpdated": "2026-11-03T14:05:00.7332168Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "002",
@@ -25,12 +25,6 @@
       "Company": "Hammer and steel",
       "TimeIn": "2026-11-03T12:39:06Z",
       "VisitorName": "Orlando Chatman"
-    },
-    {
-      "BadgeNumber": "0009",
-      "Company": "Augrade",
-      "TimeIn": "2026-11-03T13:15:49Z",
-      "VisitorName": "Keshav Sharma"
     }
   ]
 }
