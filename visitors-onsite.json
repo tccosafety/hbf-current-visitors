@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-04T13:34:33.6562216Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-04T13:35:01.3039376Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "002",
@@ -25,6 +25,12 @@
       "Company": "First energy",
       "TimeIn": "2026-11-04T13:34:14Z",
       "VisitorName": "Joe Strines"
+    },
+    {
+      "BadgeNumber": "07",
+      "Company": "Dlz",
+      "TimeIn": "2026-11-04T13:34:39Z",
+      "VisitorName": "Matthew Bradbury"
     }
   ]
 }
