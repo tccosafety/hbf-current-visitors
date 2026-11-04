@@ -1,12 +1,18 @@
 {
-  "LastUpdated": "2026-11-04T19:05:02.0272807Z",
-  "VisitorCount": 1,
+  "LastUpdated": "2026-11-04T19:09:03.0864922Z",
+  "VisitorCount": 2,
   "Visitors": [
     {
       "BadgeNumber": "010",
       "Company": "THG Geophysics",
       "TimeIn": "2026-11-04T16:33:28Z",
       "VisitorName": "Alex Balog"
+    },
+    {
+      "BadgeNumber": "0014",
+      "Company": "International construction equipment",
+      "TimeIn": "2026-11-04T19:08:18Z",
+      "VisitorName": "Samuel Chapella"
     }
   ]
 }
