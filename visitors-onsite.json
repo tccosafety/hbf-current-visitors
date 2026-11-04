@@ -1,5 +1,12 @@
 {
-  "LastUpdated": "2026-11-04T12:20:00.6156970Z",
-  "VisitorCount": 0,
-  "Visitors": []
+  "LastUpdated": "2026-11-04T12:24:13.4295243Z",
+  "VisitorCount": 1,
+  "Visitors": [
+    {
+      "BadgeNumber": "002",
+      "Company": "Kleinfelder",
+      "TimeIn": "2026-11-04T12:23:25Z",
+      "VisitorName": "Dirk Grahl"
+    }
+  ]
 }
