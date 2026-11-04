@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-04T16:40:00.4143328Z",
-  "VisitorCount": 2,
+  "LastUpdated": "2026-11-04T16:42:05.1052090Z",
+  "VisitorCount": 3,
   "Visitors": [
     {
       "BadgeNumber": "0012",
@@ -13,6 +13,12 @@
       "Company": "THG Geophysics",
       "TimeIn": "2026-11-04T16:33:28Z",
       "VisitorName": "Alex Balog"
+    },
+    {
+      "BadgeNumber": "0014",
+      "Company": "Independence Excavating",
+      "TimeIn": "2026-11-04T16:41:17Z",
+      "VisitorName": "Nick DiGeronimo"
     }
   ]
 }
