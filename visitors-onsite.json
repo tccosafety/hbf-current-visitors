@@ -1,12 +1,18 @@
 {
-  "LastUpdated": "2026-11-04T16:30:01.9005749Z",
-  "VisitorCount": 1,
+  "LastUpdated": "2026-11-04T16:35:00.2540262Z",
+  "VisitorCount": 2,
   "Visitors": [
     {
       "BadgeNumber": "0012",
       "Company": "Sparta Steel",
       "TimeIn": "2026-11-04T15:55:40Z",
       "VisitorName": "Ronald McDonald"
+    },
+    {
+      "BadgeNumber": "010",
+      "Company": "THG Geophysics",
+      "TimeIn": "2026-11-04T16:33:28Z",
+      "VisitorName": "Alex Balog"
     }
   ]
 }
