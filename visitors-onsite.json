@@ -1,24 +1,12 @@
 {
-  "LastUpdated": "2026-11-04T15:32:21.6363217Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-04T15:34:20.2267356Z",
+  "VisitorCount": 1,
   "Visitors": [
-    {
-      "BadgeNumber": "06",
-      "Company": "DLZ",
-      "TimeIn": "2026-11-04T13:33:49Z",
-      "VisitorName": "Clay Clippinger"
-    },
     {
       "BadgeNumber": "010",
       "Company": "First energy",
       "TimeIn": "2026-11-04T13:33:57Z",
       "VisitorName": "Dean Mathews"
-    },
-    {
-      "BadgeNumber": "07",
-      "Company": "Dlz",
-      "TimeIn": "2026-11-04T13:34:39Z",
-      "VisitorName": "Matthew Bradbury"
     }
   ]
 }
