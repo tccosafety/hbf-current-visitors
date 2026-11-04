@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-04T20:23:05.6687186Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-04T20:23:45.0786963Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "0014",
@@ -19,6 +19,12 @@
       "Company": "Airtower Networks",
       "TimeIn": "2026-11-04T20:23:02Z",
       "VisitorName": "Tom Ulrich"
+    },
+    {
+      "BadgeNumber": "02",
+      "Company": "Airtower",
+      "TimeIn": "2026-11-04T20:23:04Z",
+      "VisitorName": "Craig Gillespie"
     }
   ]
 }
