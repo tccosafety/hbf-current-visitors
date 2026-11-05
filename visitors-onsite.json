@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-05T13:55:00.2645161Z",
-  "VisitorCount": 14,
+  "LastUpdated": "2026-11-05T13:59:08.3781298Z",
+  "VisitorCount": 15,
   "Visitors": [
     {
       "BadgeNumber": "0010",
@@ -85,6 +85,12 @@
       "Company": "Ironworkers local17",
       "TimeIn": "2026-11-05T13:39:37Z",
       "VisitorName": "Scott Munnings"
+    },
+    {
+      "BadgeNumber": "0012",
+      "Company": "W&W|AFCO Steel",
+      "TimeIn": "2026-11-05T13:58:23Z",
+      "VisitorName": "Kenneth Brazil"
     }
   ]
 }
