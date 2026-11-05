@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-05T12:45:00.7680582Z",
-  "VisitorCount": 10,
+  "LastUpdated": "2026-11-05T12:47:30.3620796Z",
+  "VisitorCount": 12,
   "Visitors": [
     {
       "BadgeNumber": "0010",
@@ -61,6 +61,18 @@
       "Company": "Northeast ohio trenching service",
       "TimeIn": "2026-11-05T12:30:28Z",
       "VisitorName": "Charles Parnell"
+    },
+    {
+      "BadgeNumber": "16",
+      "Company": "Dlz",
+      "TimeIn": "2026-11-05T12:46:47Z",
+      "VisitorName": "Matthew Bradbury"
+    },
+    {
+      "BadgeNumber": "15",
+      "Company": "DLZ",
+      "TimeIn": "2026-11-05T12:46:59Z",
+      "VisitorName": "Clay Clippinger"
     }
   ]
 }
