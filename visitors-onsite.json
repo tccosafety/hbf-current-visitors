@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-05T11:45:00.2894827Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-05T11:46:02.0376270Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "0010",
@@ -19,6 +19,12 @@
       "Company": "Airtower",
       "TimeIn": "2026-11-04T20:23:04Z",
       "VisitorName": "Craig Gillespie"
+    },
+    {
+      "BadgeNumber": "002",
+      "Company": "Kleinfelder",
+      "TimeIn": "2026-11-05T11:45:19Z",
+      "VisitorName": "Dirk Grahl"
     }
   ]
 }
