@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-05T12:28:17.3922380Z",
-  "VisitorCount": 6,
+  "LastUpdated": "2026-11-05T12:29:04.4157088Z",
+  "VisitorCount": 8,
   "Visitors": [
     {
       "BadgeNumber": "0010",
@@ -37,6 +37,18 @@
       "Company": "Gorman-Lavelle Corp",
       "TimeIn": "2026-11-05T12:27:40Z",
       "VisitorName": "Joe Lavelle"
+    },
+    {
+      "BadgeNumber": "10",
+      "Company": "Northeast Ohio Trenching",
+      "TimeIn": "2026-11-05T12:28:17Z",
+      "VisitorName": "Stephanie Gorup"
+    },
+    {
+      "BadgeNumber": "11",
+      "Company": "NE Ohio Trenching",
+      "TimeIn": "2026-11-05T12:28:28Z",
+      "VisitorName": "George Gorup"
     }
   ]
 }
