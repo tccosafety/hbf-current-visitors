@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-06T11:45:01.5401494Z",
-  "VisitorCount": 2,
+  "LastUpdated": "2026-11-06T11:46:31.1745077Z",
+  "VisitorCount": 3,
   "Visitors": [
     {
       "BadgeNumber": "0011",
@@ -13,6 +13,12 @@
       "Company": "Ironworkers local17",
       "TimeIn": "2026-11-05T13:39:37Z",
       "VisitorName": "Scott Munnings"
+    },
+    {
+      "BadgeNumber": "002",
+      "Company": "Kleinfelder",
+      "TimeIn": "2026-11-06T11:45:46Z",
+      "VisitorName": "Dirk Grahl"
     }
   ]
 }
