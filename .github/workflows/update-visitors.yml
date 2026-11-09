@@ -7,6 +7,10 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: visitor-data-update
+  cancel-in-progress: false
+
 jobs:
   update-visitors:
     runs-on: ubuntu-latest
@@ -14,6 +18,14 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Sync with latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Write current visitor data
         env:
@@ -54,5 +66,5 @@ jobs:
             echo "No visitor data changes to commit."
           else
             git commit -m "Update current visitor status"
-            git push
+            git push origin main
           fi
