@@ -1,18 +1,5 @@
 {
-  "LastUpdated": "2026-11-09T19:16:44.9395850Z",
-  "VisitorCount": 2,
-  "Visitors": [
-    {
-      "BadgeNumber": "3",
-      "Company": "DLZ",
-      "TimeIn": "2026-11-09T15:34:13Z",
-      "VisitorName": "Clay Clippinger"
-    },
-    {
-      "BadgeNumber": "07",
-      "Company": "Dlz",
-      "TimeIn": "2026-11-09T15:34:16Z",
-      "VisitorName": "Matthew Bradbury"
-    }
-  ]
+  "LastUpdated": "2026-11-09T19:17:27.4996689Z",
+  "VisitorCount": 0,
+  "Visitors": []
 }
