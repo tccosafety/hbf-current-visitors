@@ -1,12 +1,5 @@
 {
-  "LastUpdated": "2026-11-09T19:37:31.4003857Z",
-  "VisitorCount": 1,
-  "Visitors": [
-    {
-      "BadgeNumber": "15",
-      "Company": "test company",
-      "TimeIn": "2026-11-09T19:27:37Z",
-      "VisitorName": "test person2"
-    }
-  ]
+  "LastUpdated": "2026-11-09T19:40:02.6174369Z",
+  "VisitorCount": 0,
+  "Visitors": []
 }
