@@ -1,12 +1,18 @@
 {
-  "LastUpdated": "2026-11-09T13:40:00.3498611Z",
-  "VisitorCount": 1,
+  "LastUpdated": "2026-11-09T13:44:31.3392602Z",
+  "VisitorCount": 2,
   "Visitors": [
     {
       "BadgeNumber": "6",
       "Company": "JLR Steel service",
       "TimeIn": "2026-11-09T13:13:59Z",
       "VisitorName": "Jimmy Rutherford I don't know what that guy's last name"
+    },
+    {
+      "BadgeNumber": "002",
+      "Company": "Kleinfelder",
+      "TimeIn": "2026-11-09T13:43:48Z",
+      "VisitorName": "Dirk Grahl"
     }
   ]
 }
