@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-10T17:00:01.9051493Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-10T17:01:05.7307842Z",
+  "VisitorCount": 3,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -19,12 +19,6 @@
       "Company": "DLZ",
       "TimeIn": "2026-11-10T12:47:05Z",
       "VisitorName": "Clay Clippinger"
-    },
-    {
-      "BadgeNumber": "9",
-      "Company": "Nationwide Shotcrete INC.",
-      "TimeIn": "2026-11-10T15:43:39Z",
-      "VisitorName": "Eric Covarrubias"
     }
   ]
 }
