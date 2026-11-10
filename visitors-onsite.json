@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-10T14:10:00.7821629Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-10T14:15:02.0457765Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -19,6 +19,12 @@
       "Company": "DLZ",
       "TimeIn": "2026-11-10T12:47:05Z",
       "VisitorName": "Clay Clippinger"
+    },
+    {
+      "BadgeNumber": "9",
+      "Company": "PSI",
+      "TimeIn": "2026-11-10T14:14:38Z",
+      "VisitorName": "Jack Hickin"
     }
   ]
 }
