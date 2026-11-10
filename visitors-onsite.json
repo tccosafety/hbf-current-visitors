@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-10T19:30:01.4058149Z",
-  "VisitorCount": 3,
+  "LastUpdated": "2026-11-10T19:31:06.1247387Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -19,6 +19,12 @@
       "Company": "DLZ",
       "TimeIn": "2026-11-10T12:47:05Z",
       "VisitorName": "Clay Clippinger"
+    },
+    {
+      "BadgeNumber": "10",
+      "Company": "ALL Crane",
+      "TimeIn": "2026-11-10T19:30:13Z",
+      "VisitorName": "Zac Kasparek"
     }
   ]
 }
