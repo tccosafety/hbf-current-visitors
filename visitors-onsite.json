@@ -1,12 +1,24 @@
 {
-  "LastUpdated": "2026-11-11T12:25:03.2380585Z",
-  "VisitorCount": 1,
+  "LastUpdated": "2026-11-11T12:28:00.3289725Z",
+  "VisitorCount": 3,
   "Visitors": [
     {
       "BadgeNumber": "2",
       "Company": "Kleinfelder",
       "TimeIn": "2026-11-11T11:54:19Z",
       "VisitorName": "Dirk Grahl"
+    },
+    {
+      "BadgeNumber": "3",
+      "Company": "Dlz",
+      "TimeIn": "2026-11-11T12:27:17Z",
+      "VisitorName": "Clay Clippinger"
+    },
+    {
+      "BadgeNumber": "7",
+      "Company": "Dlz",
+      "TimeIn": "2026-11-11T12:27:33Z",
+      "VisitorName": "Matthew Bradbury"
     }
   ]
 }
