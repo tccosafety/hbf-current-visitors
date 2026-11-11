@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-11T16:40:01.1676720Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-11T16:44:37.5032443Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -25,6 +25,12 @@
       "Company": "WWAFCOSTEEL",
       "TimeIn": "2026-11-11T14:04:25Z",
       "VisitorName": "Sal Cruz"
+    },
+    {
+      "BadgeNumber": "9",
+      "Company": "Nationwide Shotcrete",
+      "TimeIn": "2026-11-11T16:43:52Z",
+      "VisitorName": "Eric Covarrubias"
     }
   ]
 }
