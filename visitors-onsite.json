@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-11T14:01:58.2165453Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-11T14:05:01.5458695Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -25,6 +25,12 @@
       "Company": "Commercial Group Lifting Products",
       "TimeIn": "2026-11-11T14:01:11Z",
       "VisitorName": "Rich Glover"
+    },
+    {
+      "BadgeNumber": "10",
+      "Company": "WWAFCOSTEEL",
+      "TimeIn": "2026-11-11T14:04:25Z",
+      "VisitorName": "Sal Cruz"
     }
   ]
 }
