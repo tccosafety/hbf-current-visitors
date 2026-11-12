@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-12T12:35:00.7850511Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-12T12:36:35.4936249Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -25,6 +25,12 @@
       "Company": "Suncoast Reinforcing LLC",
       "TimeIn": "2026-11-12T12:25:38Z",
       "VisitorName": "Hunter Holt"
+    },
+    {
+      "BadgeNumber": "7",
+      "Company": "WWAFCOSTEEL",
+      "TimeIn": "2026-11-12T12:35:47Z",
+      "VisitorName": "Sal Cruz"
     }
   ]
 }
