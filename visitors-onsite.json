@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-12T15:40:55.9512331Z",
-  "VisitorCount": 6,
+  "LastUpdated": "2026-11-12T15:41:59.3515807Z",
+  "VisitorCount": 7,
   "Visitors": [
     {
       "BadgeNumber": "2",
@@ -37,6 +37,12 @@
       "Company": "AkA Team",
       "TimeIn": "2026-11-12T15:40:11Z",
       "VisitorName": "Anthony Lee"
+    },
+    {
+      "BadgeNumber": "3",
+      "Company": "Aka",
+      "TimeIn": "2026-11-12T15:41:16Z",
+      "VisitorName": "Andrew Cardenas"
     }
   ]
 }
