@@ -1,5 +1,12 @@
 {
-  "LastUpdated": "2026-11-13T17:55:01.0841895Z",
-  "VisitorCount": 0,
-  "Visitors": []
+  "LastUpdated": "2026-11-13T17:56:58.7575509Z",
+  "VisitorCount": 1,
+  "Visitors": [
+    {
+      "BadgeNumber": "2",
+      "Company": "Independence Construction",
+      "TimeIn": "2026-11-13T17:56:14Z",
+      "VisitorName": "Zach Durbin"
+    }
+  ]
 }
