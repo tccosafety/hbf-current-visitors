@@ -1,12 +1,18 @@
 {
-  "LastUpdated": "2026-11-13T18:25:00.7543627Z",
-  "VisitorCount": 1,
+  "LastUpdated": "2026-11-13T18:30:03.1869718Z",
+  "VisitorCount": 2,
   "Visitors": [
     {
       "BadgeNumber": "2",
       "Company": "Independence Construction",
       "TimeIn": "2026-11-13T17:56:14Z",
       "VisitorName": "Zach Durbin"
+    },
+    {
+      "BadgeNumber": "3",
+      "Company": "Bristol Hose & Fitting",
+      "TimeIn": "2026-11-13T18:25:34Z",
+      "VisitorName": "Esteban Cezario"
     }
   ]
 }
