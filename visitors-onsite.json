@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-16T21:30:00.4337464Z",
-  "VisitorCount": 7,
+  "LastUpdated": "2026-11-16T21:33:26.3065413Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -37,12 +37,6 @@
       "Company": "THG Geophysics",
       "TimeIn": "2026-11-16T17:23:13Z",
       "VisitorName": "Jon Ciani"
-    },
-    {
-      "BadgeNumber": "21",
-      "Company": "Colasanti",
-      "TimeIn": "2026-11-16T19:27:35Z",
-      "VisitorName": "Kyle Snyder"
     }
   ]
 }
