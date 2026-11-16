@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-16T15:50:02.3882225Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-16T15:53:35.9508386Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -25,6 +25,12 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:49:21Z",
       "VisitorName": "Simone Ricci"
+    },
+    {
+      "BadgeNumber": "9",
+      "Company": "United rentals",
+      "TimeIn": "2026-11-16T15:52:52Z",
+      "VisitorName": "Dwayne Frazier"
     }
   ]
 }
