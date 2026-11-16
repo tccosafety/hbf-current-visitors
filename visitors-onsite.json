@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-16T13:48:03.6466817Z",
-  "VisitorCount": 2,
+  "LastUpdated": "2026-11-16T13:48:44.3072744Z",
+  "VisitorCount": 3,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -13,6 +13,12 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:48:01Z",
       "VisitorName": "Ryan Winkel"
+    },
+    {
+      "BadgeNumber": "6",
+      "Company": "Firstenergy",
+      "TimeIn": "2026-11-16T13:48:38Z",
+      "VisitorName": "Josh Wilson"
     }
   ]
 }
