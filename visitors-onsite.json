@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-17T13:45:01.0397479Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-17T13:46:06.2047237Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -25,6 +25,18 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:49:21Z",
       "VisitorName": "Simone Ricci"
+    },
+    {
+      "BadgeNumber": "17",
+      "Company": "THG Geophysics",
+      "TimeIn": "2026-11-17T13:45:22Z",
+      "VisitorName": "Jon Ciani"
+    },
+    {
+      "BadgeNumber": "18",
+      "Company": "THG",
+      "TimeIn": "2026-11-17T13:45:22Z",
+      "VisitorName": "Alex Balog"
     }
   ]
 }
