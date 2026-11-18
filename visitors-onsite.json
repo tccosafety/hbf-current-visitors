@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-18T20:40:01.7587384Z",
-  "VisitorCount": 6,
+  "LastUpdated": "2026-11-18T20:42:34.0966347Z",
+  "VisitorCount": 4,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -25,18 +25,6 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:49:21Z",
       "VisitorName": "Simone Ricci"
-    },
-    {
-      "BadgeNumber": "18",
-      "Company": "Michels",
-      "TimeIn": "2026-11-18T18:31:10Z",
-      "VisitorName": "Brooke Sumter"
-    },
-    {
-      "BadgeNumber": "17",
-      "Company": "Michels",
-      "TimeIn": "2026-11-18T18:31:20Z",
-      "VisitorName": "Kendra Lamer"
     }
   ]
 }
