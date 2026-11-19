@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-19T18:00:01.9811203Z",
-  "VisitorCount": 7,
+  "LastUpdated": "2026-11-19T18:05:00.9420622Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -27,22 +27,16 @@
       "VisitorName": "Simone Ricci"
     },
     {
-      "BadgeNumber": "20",
-      "Company": "CMRCC",
-      "TimeIn": "2026-11-19T16:42:30Z",
-      "VisitorName": "Mark Lichty"
-    },
-    {
       "BadgeNumber": "18",
       "Company": "CMRCC",
       "TimeIn": "2026-11-19T16:42:46Z",
       "VisitorName": "Wesley Baesel"
     },
     {
-      "BadgeNumber": "21",
-      "Company": "Cmrcc",
-      "TimeIn": "2026-11-19T16:43:26Z",
-      "VisitorName": "John Shantery"
+      "BadgeNumber": "9",
+      "Company": "Cuyahoga County SWCD",
+      "TimeIn": "2026-11-19T18:04:49Z",
+      "VisitorName": "Fred Anger"
     }
   ]
 }
