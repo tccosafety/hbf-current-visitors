@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-19T14:20:02.1235894Z",
-  "VisitorCount": 6,
+  "LastUpdated": "2026-11-19T14:24:11.6153886Z",
+  "VisitorCount": 7,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -37,6 +37,12 @@
       "Company": "THG Geophysics",
       "TimeIn": "2026-11-19T13:35:03Z",
       "VisitorName": "Jon Ciani"
+    },
+    {
+      "BadgeNumber": "17",
+      "Company": "Suncoast",
+      "TimeIn": "2026-11-19T14:23:27Z",
+      "VisitorName": "Roger Struble"
     }
   ]
 }
