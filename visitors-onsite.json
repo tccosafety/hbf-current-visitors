@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-19T13:35:00.3991344Z",
-  "VisitorCount": 5,
+  "LastUpdated": "2026-11-19T13:35:47.8181390Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -31,6 +31,12 @@
       "Company": "THG Geophysics",
       "TimeIn": "2026-11-19T13:33:50Z",
       "VisitorName": "Alex Balog"
+    },
+    {
+      "BadgeNumber": "9",
+      "Company": "THG Geophysics",
+      "TimeIn": "2026-11-19T13:35:03Z",
+      "VisitorName": "Jon Ciani"
     }
   ]
 }
