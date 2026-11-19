@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-19T15:15:00.4925648Z",
-  "VisitorCount": 7,
+  "LastUpdated": "2026-11-19T15:16:51.3196553Z",
+  "VisitorCount": 9,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -43,6 +43,18 @@
       "Company": "Suncoast",
       "TimeIn": "2026-11-19T14:23:27Z",
       "VisitorName": "Roger Struble"
+    },
+    {
+      "BadgeNumber": "18",
+      "Company": "Badger Infrastructure Solutions",
+      "TimeIn": "2026-11-19T15:16:07Z",
+      "VisitorName": "Clint Ferguson"
+    },
+    {
+      "BadgeNumber": "21",
+      "Company": "Badger",
+      "TimeIn": "2026-11-19T15:16:33Z",
+      "VisitorName": "David Del Rio"
     }
   ]
 }
