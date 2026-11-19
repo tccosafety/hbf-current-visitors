@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-19T16:40:06.2634073Z",
-  "VisitorCount": 5,
+  "LastUpdated": "2026-11-19T16:44:15.4168896Z",
+  "VisitorCount": 8,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -31,6 +31,24 @@
       "Company": "Suncoast",
       "TimeIn": "2026-11-19T14:23:27Z",
       "VisitorName": "Roger Struble"
+    },
+    {
+      "BadgeNumber": "20",
+      "Company": "CMRCC",
+      "TimeIn": "2026-11-19T16:42:30Z",
+      "VisitorName": "Mark Lichty"
+    },
+    {
+      "BadgeNumber": "18",
+      "Company": "CMRCC",
+      "TimeIn": "2026-11-19T16:42:46Z",
+      "VisitorName": "Wesley Baesel"
+    },
+    {
+      "BadgeNumber": "21",
+      "Company": "Cmrcc",
+      "TimeIn": "2026-11-19T16:43:26Z",
+      "VisitorName": "John Shantery"
     }
   ]
 }
