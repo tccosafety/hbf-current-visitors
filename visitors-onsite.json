@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-20T14:35:03.5880841Z",
-  "VisitorCount": 5,
+  "LastUpdated": "2026-11-20T14:38:26.3136961Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -31,6 +31,12 @@
       "Company": "Superior insulation",
       "TimeIn": "2026-11-20T13:17:51Z",
       "VisitorName": "John Surtz"
+    },
+    {
+      "BadgeNumber": "9",
+      "Company": "Suncoast",
+      "TimeIn": "2026-11-20T14:37:43Z",
+      "VisitorName": "Roger Struble"
     }
   ]
 }
