@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-20T13:15:01.3747707Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-20T13:18:38.4302340Z",
+  "VisitorCount": 5,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -25,6 +25,12 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:49:21Z",
       "VisitorName": "Simone Ricci"
+    },
+    {
+      "BadgeNumber": "21",
+      "Company": "Superior insulation",
+      "TimeIn": "2026-11-20T13:17:51Z",
+      "VisitorName": "John Surtz"
     }
   ]
 }
