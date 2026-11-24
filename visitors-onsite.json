@@ -1,6 +1,6 @@
 {
-  "LastUpdated": "2026-11-24T16:40:02.0284544Z",
-  "VisitorCount": 4,
+  "LastUpdated": "2026-11-24T16:44:31.9113307Z",
+  "VisitorCount": 6,
   "Visitors": [
     {
       "BadgeNumber": "3",
@@ -25,6 +25,18 @@
       "Company": "Firstenergy",
       "TimeIn": "2026-11-16T13:49:21Z",
       "VisitorName": "Simone Ricci"
+    },
+    {
+      "BadgeNumber": "15",
+      "Company": "Business Agent Laborers Local 310",
+      "TimeIn": "2026-11-24T16:43:45Z",
+      "VisitorName": "Sean Campbell"
+    },
+    {
+      "BadgeNumber": "17",
+      "Company": "Local 310 Laborers",
+      "TimeIn": "2026-11-24T16:43:46Z",
+      "VisitorName": "John Soeder"
     }
   ]
 }
